@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.row {
+  display: flex;
+  /* align-items: center;
+  justify-content: space-evenly; */
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  /* width: 90%; */
+}
+
+.col-12 {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mt-5 {
+  margin: 3rem;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+.bg-dark {
+  background-color: #333;
+}
+.text-white {
+  color: white;
+}
+.border {
+  border: 1px solid #333;
+  border-radius: 0.7em;
+  /* padding: 0 45px; */
+  overflow: hidden;
+}
+.d-block {
+  display: block;
+}
+.bg-info {
+  background-color: turquoise;
+}
+.py-3 {
+  padding: 1rem 3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 29.33333333%;
+  }
+  .row {
+    flex-wrap: nowrap;
+    gap: 0rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}

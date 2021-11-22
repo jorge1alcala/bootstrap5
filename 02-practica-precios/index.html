@@ -10,11 +10,23 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <style>
+      @media (min-width: 992px) {
+        .alto {
+          height: 100vh;
+        }
+       }
+       @media (max-width: 768px) {
+        .marg-d {
+          margin-bottom: 15px;
+        }
+        }
+    </style>
 
     <title>Bootstrap 5</title>
   </head>
   <body>
-    <main class="container text-center">
+    <main class="container text-center d-flex flex-column justify-content-center alto">
       <h1 class="display-4">Lista de Precios</h1>
       <p class="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in
@@ -23,18 +35,30 @@
         quam accusantium iusto?'
       </p>
       <div class="row">
-        <article class="col-12 col-md-4">
+        <article class="col-12 col-md-4 mb-4 mb-md-0">
           <div class="border border-dark rounded rounded-3">
             <p class="mt-5 fw-bold">Basic</p>
             <h2 class="display-4">$100</h2>
             <p class="font-monospace mt-3">Up to 5 user for free</p>
+            <ul class="list-unstyled my-5">
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+            </ul>
+            <a href="#" class="bg-info text-white d-block py-3 text-decoration-none">Aceder</a>
           </div>
         </article>
-        <article class="col-12 col-md-4 mt-3-md">
-          <div class="border border-dark rounded rounded-3">
+        <article class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="border border-dark rounded rounded-3 bg-dark text-white">
             <p class="mt-5 fw-bold">Pro</p>
             <h2 class="display-4">$100</h2>
             <p class="font-monospace mt-3">Up to 5 user for free</p>
+            <ul class="list-unstyled my-5">
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+            </ul>
+            <a href="#" class="bg-info text-white d-block py-3 text-decoration-none">Aceder</a>
           </div>
         </article>
         <article class="col-12 col-md-4 mt-3-sm">
@@ -42,9 +66,16 @@
             <p class="mt-5 fw-bold">Ultimate</p>
             <h2 class="display-4">$100</h2>
             <p class="font-monospace mt-3">Up to 5 user for free</p>
+            <ul class="list-unstyled my-5">
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+              <li>Loren, ipsum</li>
+            </ul>
+            <a href="#" class="bg-info text-white d-block py-3 text-decoration-none">Aceder</a>
           </div>
         </article>
       </div>
+      <footer class="mt-5">Recuerda de escribir el codigo</footer>
     </main>
   </body>
 </html>
